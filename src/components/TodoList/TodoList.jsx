@@ -7,6 +7,7 @@ const TodoList = ({ todos, handleSetComplete, handleDelete, activeFilter,showAct
     <div className="flex flex-col mt-7 rounded-lg overflow-hidden shadow-2xl">
       {todos.map((todo) => {
         return (
+          
           <Todo
             key={todo.id}
             todo={todo}
@@ -15,6 +16,7 @@ const TodoList = ({ todos, handleSetComplete, handleDelete, activeFilter,showAct
           />
         );
       })}
+      
       <TodoFilters
         activeFilter={activeFilter}
         total={todos.length}
